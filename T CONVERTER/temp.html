@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1052e04477.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+          
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size:100%,100%;
+        background-image: 100vh;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+          
+        .container h1 {
+            color: aqua;
+            width: 40%;
+            height: 20px;
+            border: 5p solid green;
+            font-weight: 700;
+            font-size: 32px;
+            text-align: center;
+            padding:20px;
+            margin:20px;
+        }
+          
+        .converter-row {
+
+            display: flex;
+            width: 43%;
+            height:40%;
+            justify-content: space-between;
+            align-items: center;
+            background-image:url("https://wallpapercave.com/wp/wp6946084.jpg");
+            background-size:100%,100%;
+            border-radius: 10px;
+            padding: 50px 20px;
+        }
+          
+        .col {
+            flex-basis: 32%;
+            text-align: center;
+        }
+          
+        .col label {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color:black;
+            font-size: 21px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+          
+        .col input {
+            width: 150px;
+            height: 30px;
+            background: white;
+            border-radius: 25px;
+            text-align: center;
+        }
+    </style>
+      
+</head>
+<body>
+    
+    <div class="container">
+        <i class="fa-solid fa-temperature-sun" style="color: #1f5147;"></i><i class="fa-solid fa-temperature-sun" style="color: #1f5147;"></i>
+        <h1>
+            Temperature Converter </h1>
+        <div class="converter-row">
+            <div class="col">
+                <label>Fahrenheit</label>
+                <input type="number" id="fahrenheit">
+            </div>
+      
+            <div class="col">
+                <label>Celsius</label>
+                <input type="number" id="celsius">
+            </div>
+      
+            <div class="col">
+                <label>Kelvin</label>
+                <input type="number" id="kelvin">
+            </div>
+        </div>
+    </div>
+    <script src="temp.js" ></script>  
+    
+</body>
+</html>
